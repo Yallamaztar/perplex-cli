@@ -35,13 +35,6 @@ func checkStatus(s *server.Server) {
 	}
 }
 
-func runAll(p, s, l *server.Server) {
-	cmd := exec.Command("cmd", "/c", "cls")
-	cmd.Stdout = os.Stdout
-	cmd.Run()
-
-}
-
 func main() {
 	loop := flag.Bool("l", false, "run indefinitely")
 	loop = flag.Bool("loop", false, "run indefinitely")
@@ -57,6 +50,10 @@ func main() {
 
 	if *loop {
 		for {
+			cmd := exec.Command("cmd", "/c", "cls")
+			cmd.Stdout = os.Stdout
+			cmd.Run()
+
 			fmt.Println("\n   \033[1m\033[35mPerpleX Sniper SnD Status Checker\033[0m")
 			fmt.Println("   \033[1mhttps://github.com/Yallamaztar/perplex-cli\033[0m")
 			fmt.Println("   ──────────────────────────────────────────")
@@ -68,6 +65,10 @@ func main() {
 			time.Sleep(time.Duration(3) * time.Second)
 		}
 	}
+
+	cmd := exec.Command("cmd", "/c", "cls")
+	cmd.Stdout = os.Stdout
+	cmd.Run()
 
 	fmt.Println("\n   \033[1m\033[35mPerpleX Sniper SnD Status Checker\033[0m")
 	fmt.Println("   \033[1mhttps://github.com/Yallamaztar/perplex-cli\033[0m")
