@@ -36,8 +36,7 @@ func checkStatus(s *server.Server) {
 }
 
 func main() {
-	loop := flag.Bool("l", false, "run indefinitely")
-	loop = flag.Bool("loop", false, "run indefinitely")
+	loop := flag.Bool("loop", false, "run indefinitely")
 	flag.Parse()
 
 	primary := iw4m.NewWrapper("http://193.23.160.188:1624", "193231601885151", "")
