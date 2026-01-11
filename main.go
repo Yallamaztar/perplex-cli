@@ -13,7 +13,7 @@ import (
 func checkStatus(s *server.Server) {
 	status, err := s.Status()
 	if err != nil {
-		fmt.Println("   [ \033[1m\033[35mPerpleX Sniper SnD\033[0m ] (\033[31mInactive\033[0m)")
+		fmt.Println("   [ \033[1m\033[35mServer Not Reachable\033[0m ] (\033[31mInactive\033[0m)")
 		return
 	}
 
