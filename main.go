@@ -23,7 +23,7 @@ func checkStatus(s *server.Server) {
 		fmt.Println("   players online:", len(server.Players), "/", server.MaxPlayers)
 
 		for _, player := range server.Players {
-			fmt.Printf("    - %-15s (%dms)\n", player.Name, player.Ping)
+			fmt.Printf("    - %-10s (%dms)\n", player.Name, player.Ping)
 		}
 
 		println()
@@ -38,8 +38,8 @@ func main() {
 	cmd.Run()
 
 	fmt.Println("\n   \033[1m\033[35mPerpleX Sniper SnD Status Checker\033[0m")
-	fmt.Println("   \033[1mhttps://github.com/Yallamaztar\033[0m")
-	fmt.Println("   ───────────────────────────")
+	fmt.Println("   \033[1mhttps://github.com/Yallamaztar/perplex-cli\033[0m")
+	fmt.Println("   ──────────────────────────────────────────")
 
 	primary := iw4m.NewWrapper(
 		"http://193.23.160.188:1624",

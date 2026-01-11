@@ -1,4 +1,4 @@
-module iw4
+module perplex
 
 go 1.25.3
 
