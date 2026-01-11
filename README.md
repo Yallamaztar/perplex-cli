@@ -1,7 +1,7 @@
 PerpleX Sniper SnD Status Checker
 =================================
 
-A small command-line tool that shows the status of PerpleX Sniper SnD IW4M servers.
+A small command-line tool that shows the status of PerpleX Sniper SnD servers
 
 ![status](assets/image.png)
 
