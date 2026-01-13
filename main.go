@@ -15,7 +15,9 @@ import (
 func checkStatus(s *server.Server) {
 	status, err := s.Status()
 	if err != nil {
+		fmt.Println("   ─────────────────────────────────────────────────")
 		fmt.Println("   [ \033[1m\033[35mServer Not Reachable\033[0m ] (\033[31mInactive\033[0m)")
+		fmt.Println("   ─────────────────────────────────────────────────")
 		return
 	}
 
@@ -40,7 +42,7 @@ func main() {
 	flag.Parse()
 
 	primary := iw4m.NewWrapper("http://193.23.160.188:1624", "193231601885151", "")
-	secondary := iw4m.NewWrapper("http://217.217.243.33:1624", "217217243334242", "")
+	secondary := iw4m.NewWrapper("http://51.75.150.218:1624", "51751502185151", "")
 	last := iw4m.NewWrapper("http://45.146.253.176:1624", "451462531765151", "")
 
 	p := server.NewServer(primary)
